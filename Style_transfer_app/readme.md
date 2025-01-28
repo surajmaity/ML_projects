@@ -19,7 +19,7 @@ This project implements a neural style transfer application that allows users to
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/Style_transfer_app.git
+   git clone https://github.com/surajmaity/ML_projects/tree/main/Style_transfer_app
    ```
 2. Navigate to the project directory:
    ```bash
@@ -47,11 +47,11 @@ This project implements a neural style transfer application that allows users to
 - `--style_weight`: Weight for style loss (default: 1e-2)
 
 ## Research Paper
-This implementation is based on the seminal paper:
-"A Neural Algorithm of Artistic Style" by Leon A. Gatys, Alexander S. Ecker, and Matthias Bethge
-Published in 2015, this paper introduced the concept of neural style transfer using convolutional neural networks.
+This implementation is based on the paper:
+"Exploring the Structure of a Real-time, Arbitrary Neural Artistic Stylization Network" by Golnaz Ghiasi, Honglak Lee, Manjunath Kudlur, Vincent Dumoulin, Jonathon Shlens
+Published in 2017, this paper presents a real-time approach to neural style transfer using feed-forward networks.
 
-Paper Link: https://arxiv.org/abs/1508.06576
+Paper Link: https://arxiv.org/pdf/1705.06830
 
 ## Dataset
 The model can be used with any images, but for training and testing, we recommend using:
@@ -63,5 +63,4 @@ The model can be used with any images, but for training and testing, we recommen
   - Contains over 80,000 artworks from various artists and styles
 
 ## Examples:
-
 
