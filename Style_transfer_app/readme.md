@@ -62,5 +62,5 @@ The model can be used with any images, but for training and testing, we recommen
   - Website: https://www.wikiart.org/
   - Contains over 80,000 artworks from various artists and styles
 
-## Examples:
+## live Link for the project : https://stylizer.streamlit.app
 
