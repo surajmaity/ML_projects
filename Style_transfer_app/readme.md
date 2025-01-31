@@ -1,5 +1,7 @@
 # Style Transfer Application
 
+## live Link: https://stylizer.streamlit.app
+
 ## Overview
 This project implements a neural style transfer application that allows users to combine the content of one image with the artistic style of another. The application uses deep learning techniques to generate visually appealing images that maintain the content of the original photo while adopting the artistic style of a reference image.
 
@@ -62,5 +64,5 @@ The model can be used with any images, but for training and testing, we recommen
   - Website: https://www.wikiart.org/
   - Contains over 80,000 artworks from various artists and styles
 
-## live Link for the project : https://stylizer.streamlit.app
+
 
