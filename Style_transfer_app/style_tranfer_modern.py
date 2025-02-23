@@ -29,13 +29,13 @@ def load_image(uploaded_file, image_size=(256, 256), col=st):
     if img.shape[-1] == 4:
         img = img[:, :, :3]
     img = tf.expand_dims(img, axis=0) / 255.0
-    col.image(np.array(img[0]), use_column_width=True)
+    col.image(np.array(img[0]), use_container_width=True)
     return img
 
 def show_images(images, titles=('',), col=st):
     n = len(images)
     for i in range(n):
-        col.image(np.array(images[i][0]), use_column_width=True)
+        col.image(np.array(images[i][0]), use_container_width=True)
 
 # Custom CSS for modern look
 st.markdown(
