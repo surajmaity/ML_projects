@@ -1,0 +1,13 @@
+1. Buy groceries
+2. Do laundry
+3. Clean the house
+4. Pay bills
+5. Go for a walk
+6. Read a book
+7. Watch a movie
+8. Exercise
+9. Cook dinner
+10. Practice a hobby
+
+
+
