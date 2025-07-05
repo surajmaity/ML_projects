@@ -78,4 +78,4 @@ This project is for educational purposes. Please respect the licenses of any thi
 
 ---
 
-_Built with ❤️ while learning Machine Learning_
+_Built with ❤️ by suraj_
