@@ -70,12 +70,6 @@ This is a personal learning repository, but suggestions and feedback are always 
 
 This project is for educational purposes. Please respect the licenses of any third-party libraries and datasets used in individual projects.
 
-## 📞 Contact
-
-- **GitHub:** [Your GitHub Profile]
-- **LinkedIn:** [Your LinkedIn Profile]
-- **Email:** [Your Email]
-
----
+--
 
 _Built with ❤️ by suraj_
