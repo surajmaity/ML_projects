@@ -7,7 +7,7 @@ from google.generativeai import types
 load_dotenv()
 api_key = os.environ.get('GOOGLE_API_KEY')
 genai.configure(api_key=api_key)
-MODEL_ID = "gemini-2.0-flash-001"
+MODEL_ID = "gemini-2.0-flash-001" 
 
 # read the task from the file
 def read_tasks(filepath):
@@ -18,7 +18,7 @@ def read_tasks(filepath):
 
 
 
-#make a call to openai with prompt to catergorize out tasks , prompts have a choices feature now  , 
+#make a call to Gemini with prompt to catergorize out tasks , prompts have a choices feature now  , 
 #also inside of the message we can give system prompts too using role as system 
 def summarize_tasks(tasks):
     prompt = f"""
