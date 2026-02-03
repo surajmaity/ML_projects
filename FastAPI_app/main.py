@@ -1,7 +1,9 @@
+from dataclasses import field
 import pickle
 from fastapi import FastAPI
 from fastapi.routing import JSONResponse
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
+from typing import Annotated
 
 
 #import the ml model
