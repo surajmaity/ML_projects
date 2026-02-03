@@ -1,2 +1,15 @@
-.DS_Store
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment folders
+venv/
+.venv/
+env/
+
+# Environment variables
 .env
+
+# macOS system files
+.DS_Store
