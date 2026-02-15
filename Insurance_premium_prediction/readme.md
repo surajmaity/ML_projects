@@ -16,6 +16,8 @@ A FastAPI-based machine learning service that predicts insurance premium categor
 ```
 Insurance_premium_prediction/
 ├── app.py                      # FastAPI application and route handlers
+├── streamlit_app.py            # Streamlit UI for predictions
+├── Dockerfile                  # Container build for API deployment
 ├── model/
 │   ├── model.pkl              # Trained ML model (pickle file)
 │   └── predict.py             # Prediction logic and model loading
@@ -44,7 +46,9 @@ Insurance_premium_prediction/
 
 ## Usage
 
-### Starting the Server
+### Option 1: FastAPI (REST API)
+
+Start the API server:
 
 ```bash
 uvicorn app:app --reload
@@ -52,11 +56,35 @@ uvicorn app:app --reload
 
 The API will be available at `http://localhost:8000`
 
-### API Documentation
-
-Once the server is running, visit:
+**API documentation** (when the server is running):
 - **Swagger UI**: `http://localhost:8000/docs`
 - **ReDoc**: `http://localhost:8000/redoc`
+
+### Option 2: Streamlit (Web UI)
+
+Run the Streamlit app for a form-based interface:
+
+```bash
+streamlit run streamlit_app.py
+```
+
+Open `http://localhost:8501` in your browser to use the prediction form.
+
+### Option 3: Docker
+
+Build and run the API in a container:
+
+```bash
+docker build -t insurance_premium_api .
+docker run -p 8000:8000 insurance_premium_api
+```
+
+To push to Docker Hub (after tagging with your username):
+
+```bash
+docker build -t <your-dockerhub-username>/insurance_premium_api .
+docker push <your-dockerhub-username>/insurance_premium_api
+```
 
 ## API Endpoints
 
@@ -198,17 +226,21 @@ print(response.json())
 ### Key Technologies
 
 - **FastAPI**: Modern, fast web framework for building APIs
+- **Streamlit**: Web UI for interactive predictions
 - **Pydantic**: Data validation using Python type annotations
 - **Pandas**: Data manipulation and DataFrame operations
 - **Pickle**: Model serialization and loading
+- **Docker**: Containerized deployment
 
 ### Code Structure
 
 - **`app.py`**: Main FastAPI application with route definitions
+- **`streamlit_app.py`**: Streamlit UI that uses the same model and schemas
 - **`model/predict.py`**: Model loading and prediction logic
 - **`schema/user_input.py`**: Input validation schema with computed fields
 - **`schema/prediction_response.py`**: Response structure definition
 - **`config/city_tier.py`**: City tier classification configuration
+- **`Dockerfile`**: Multi-stage container build for the API
 
 ## Notes
 
